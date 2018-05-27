@@ -1,2 +1,3 @@
 # node-koa-ideas
-Some ideas on Node.js backend using Koa, Babel, Flow
+
+Some ideas on Node.js API app using Koa, Babel and Flow
