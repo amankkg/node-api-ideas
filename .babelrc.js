@@ -11,7 +11,7 @@ module.exports = {
       '@babel/preset-env',
       {
         loose: true,
-        modules: false,
+        modules: 'commonjs',
         shippedProposals: true,
         targets: {node: 'current'},
       },

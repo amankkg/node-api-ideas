@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node --experimental-modules src/index.mjs",
+    "build": "babel src/ -d dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -17,6 +17,11 @@
     "@babel/plugin-proposal-pipeline-operator": "^7.0.0-beta.49",
     "@babel/preset-env": "^7.0.0-beta.49",
     "@babel/preset-flow": "^7.0.0-beta.49",
+    "@babel/register": "^7.0.0-beta.49",
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-flowtype": "^2.47.1",
     "flow-bin": "^0.73.0"
   },
   "license": "MIT",

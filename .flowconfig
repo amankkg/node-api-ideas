@@ -1,9 +1,11 @@
+[ignore]
+dist/.*
+
 [lints]
 all=warn
 
 [options]
+esproposal.export_star_as=enable
+esproposal.optional_chaining=enable
 experimental.const_params=true
-experimental.export_star_as=enable
-experimental.optional_chaining=enable
 emoji=true
-unsafe.enable_getters_and_setters=true

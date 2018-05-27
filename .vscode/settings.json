@@ -7,6 +7,9 @@
     "**/.DS_Store": true,
     ".vscode": true,
     "node_modules": true,
-    "package-lock.json": true
-  }
+    "package-lock.json": true,
+    "dist": true
+  },
+  "flow.useNPMPackagedFlow": true,
+  "flow.useLSP": true
 }
