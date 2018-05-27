@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node --experimental-modules index.mjs",
+    "start": "node --experimental-modules src/index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -19,10 +19,9 @@
     "@babel/preset-flow": "^7.0.0-beta.49",
     "flow-bin": "^0.73.0"
   },
-  "name": "app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amankkg/node-koa-ideas.git"
+  }
 }
