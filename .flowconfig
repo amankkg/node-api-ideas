@@ -1,0 +1,9 @@
+[lints]
+all=warn
+
+[options]
+experimental.const_params=true
+experimental.export_star_as=enable
+experimental.optional_chaining=enable
+emoji=true
+unsafe.enable_getters_and_setters=true
