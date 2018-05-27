@@ -3,7 +3,7 @@ import http from 'http'
 import Koa from 'koa'
 import router from 'koa-route'
 
-import { add } from './add'
+import {add} from './add'
 
 const app = new Koa()
 
