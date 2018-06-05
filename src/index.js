@@ -17,24 +17,33 @@ app.use((ctx, next) => {
   return next
 })
 
-const todosApi = ({todosService}) => ({
+const todosApi = ({todoSvc}) => ({
   getTodos: async ctx => {
-    // some logic
+    const todos = await todoSvc.getAll(ctx.request.query)
+    ctx.body = todos
+    ctx.status = 200
   },
+
   createTodo: async ctx => {
-    // some logic
+    const todo = await todoSvc.create(ctx.request.body)
+    ctx.body = todo
+    ctx.status = 201
   },
+
   updateTodo: async ctx => {
-    // some logic
+    await todoSvc.update(ctx.params.id, ctx.request.body)
+    ctx.status = 204
   },
+
   deleteTodo: async ctx => {
-    // some logic
+    await todoSvc.delete(ctx.parms.id, ctx.request.body)
+    ctx.status = 204
   },
 })
 
 const api = makeInvoker(todosApi)
 router.get('/todos', api('getTodos'))
-router.post('/todos', api('createTodos'))
+router.post('/todos', api('createTodo'))
 router.patch('/todos', api('updateTodo'))
 router.delete('/todos', api('deleteTodo'))
 

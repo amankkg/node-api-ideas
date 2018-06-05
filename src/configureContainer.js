@@ -1,14 +1,15 @@
 // @flow
 import {createContainer, asClass, asFunction} from 'awilix'
-import {todosService} from './todos-service'
-import {TodosRepository} from './todos-repository'
+
+import {todoService} from './todo/svc'
+import {TodoRepository} from './todo/repo'
 
 export function configureContainer() {
   const container = createContainer()
 
   container.register({
-    todosService: asFunction(todosService).scoped(),
-    todosRepository: asClass(TodosRepository).singleton(),
+    todoSvc: asFunction(todoService).scoped(),
+    todoRepo: asClass(TodoRepository).singleton(),
   })
 
   return container
