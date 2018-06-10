@@ -5,7 +5,8 @@ dist/.*
 all=warn
 
 [options]
+emoji=true
 esproposal.export_star_as=enable
 esproposal.optional_chaining=enable
+experimental.well_formed_exports=true
 experimental.const_params=true
-emoji=true
