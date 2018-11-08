@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "babel src/ -d dist/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src"
   },
   "dependencies": {
     "awilix": "^3.0.8",
